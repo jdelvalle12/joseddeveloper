@@ -1,0 +1,74 @@
+/* Navbar */
+
+/* .navbar  {
+  position: relative;
+  text-align: center;
+  z-index: 100;
+  width: 100.4%;
+  height: auto;
+  display: inline-block;
+  padding-right: 2.0rem;
+  margin: auto;
+  font-family: "Orbitron","Quantico", sans-serif;
+  font-size: 20px;
+  line-height: 1.9;
+  list-style-type: none;
+  color: whitesmoke;
+  } */
+   
+  
+   .projects {
+    color: whitesmoke;
+    padding-right: 2.0rem;
+    margin: 0 80px;
+    font-family: "Orbitron","Quantico", sans-serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    list-style-type: none;
+   }
+
+   .projects:hover {
+    color: rgb(245, 71, 40);
+  }
+
+   .contact {
+    color: whitesmoke;
+    padding-right: 2.0rem;
+    margin: 0 80px;
+    font-family: "Orbitron","Quantico", sans-serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    list-style-type: none;
+   }
+
+   .contact:hover {
+    color: magenta;
+  }
+
+  .about-me {
+    color: whitesmoke;
+    padding-right: 2.0rem;
+    margin: 0 80px;
+    font-family: "Orbitron","Quantico", sans-serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    list-style-type: none;
+    }
+  
+  .about-me:hover {
+    color: cyan;
+  }
+
+  .resume {
+    color: whitesmoke;
+    padding-right: 2.0rem;
+    margin: 0 80px;
+    font-family: "Orbitron","Quantico", sans-serif;
+    font-size: 1rem;
+    line-height: 1.9;
+    list-style-type: none;
+  }
+
+  .resume:hover {
+    color: rgb(231, 235, 12)
+  }

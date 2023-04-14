@@ -1,0 +1,92 @@
+/* Resume */
+
+.resume-card {
+    position: relative;
+    z-index: 1;
+    /* margin-bottom: 0rem; */
+    padding: 0;
+    background: rgb(5, 5, 41);
+    font-size: 20px;
+    /* Add styles for the box */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin-left: 13rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    color: white;
+    /* max-height: 40rem; */
+  }
+  
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Set a negative z-index to place the video behind the card */
+  }
+  
+  .resume-card h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  .resume-card p {
+    font-size: 1rem;
+    margin: 1rem;
+    color: whitesmoke;
+  }
+  
+  .resume-card ul {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    text-align: center;
+  }
+  
+  .resume-card h4 {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /* .resume-card li {
+    font-size: 24px;
+    margin-bottom: 2px;
+  } */
+  
+ 
+  
+  .resume-title:hover {
+    color: rgb(231, 235, 12);
+  }
+
+  .resume-download-button {
+    margin-bottom: 1rem;
+    margin-left: 4rem;
+    margin-top: -7rem;
+    }
+
+    .resume-download-button button {
+        /* Customize button styles */
+        background-color: #007bff; /* Set background color */
+        color: #fff; /* Set text color */
+        padding: 0.5rem 1rem; /* Set padding */
+        border: none; /* Remove border */
+        cursor: pointer; /* Add cursor pointer */
+        font-size: 1rem; /* Set font size */
+        font-weight: bold; /* Set font weight */
+        border-radius: 4px; /* Add border radius */
+        transition: background-color 0.3s ease-in-out; /* Add transition effect */
+        width: 20rem;
+      }
+      
+      .resume-download-button button:hover {
+        /* Change styles on hover */
+        background-color: #0056b3; /* Change background color */
+      }  

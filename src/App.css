@@ -1,0 +1,659 @@
+ html {
+  position: relative;
+  font-family: "Orbitron","Quantico", sans-serif;
+  font-size: 1.7rem;
+  background-color: black;
+  color:rgb(109, 108, 108);
+  margin:0;
+  padding:0;  
+  width: auto;
+  height: auto;
+  color: white;
+}
+
+ /* Media Query for Mobile Devices */
+ @media only screen and (max-width: 480px) and (orientation: landscape) {
+  body {
+      width: auto;
+      height: auto;
+      font-size: 1rem;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+      width: auto;
+      height: auto;
+      font-size: 30px
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+      width: auto;
+      height: auto;
+      font-size: 1rem;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  body {
+      width: auto;
+      height: auto;
+      font-size: 1rem;
+  }
+}
+
+/*Home*/
+.home-container {
+    
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: 100% 120%;
+  background-repeat: no-repeat;
+  color: white;
+  padding-bottom: 10rem; /* adjust the value to your desired amount */
+  padding-right: 0;
+ }
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 115%;
+  height: 100%;
+  object-fit: fill;
+  margin-right: 0;
+}
+
+.home-content{
+  position: relative;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-right: 26rem;
+  color: white;
+  
+}
+
+/* p {
+  position: relative;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: justify;
+  /* margin-right: 1rem; */
+  /* color: black;
+  padding-bottom: 10rem;
+} */ 
+
+/*About me*/
+
+.aboutme-container {
+  background-image: url('./images/Background.jpg');
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  padding-bottom: 18rem; /* adjust the value to your desired amount */
+}
+
+
+.description {
+  font-size: 1rem;
+  color: black;
+  max-width: 40%;
+  margin-left: 5rem;
+}
+
+.aboutme {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  color: black;
+  margin-left: 7rem;
+}
+
+.profile-picture {
+  max-width: 15%;
+  height: auto;
+  border-radius: 2%;
+  margin-left: 10rem;
+  margin-top: 3rem;
+  /* Add any other styling for the profile picture here */
+}
+
+/* Navbar */
+
+.projects {
+  color: whitesmoke;
+  padding-right: 2.0rem;
+  margin: 0 80px;
+  font-family: "Orbitron","Quantico", sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  list-style-type: none;
+ }
+
+ .projects:hover {
+  color: rgb(245, 71, 40);
+}
+
+ .contact {
+  color: whitesmoke;
+  padding-right: 2.0rem;
+  margin: 0 80px;
+  font-family: "Orbitron","Quantico", sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  list-style-type: none;
+ }
+
+ .contact:hover {
+  color: magenta;
+}
+
+.about-me {
+  color: whitesmoke;
+  padding-right: 2.0rem;
+  margin: 0 80px;
+  font-family: "Orbitron","Quantico", sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  list-style-type: none;
+  }
+
+.about-me:hover {
+  color: cyan;
+}
+
+.resume {
+  color: whitesmoke;
+  padding-right: 2.0rem;
+  margin: 0 80px;
+  font-family: "Orbitron","Quantico", sans-serif;
+  font-size: 1rem;
+  line-height: 1.9;
+  list-style-type: none;
+}
+
+.resume:hover {
+  color: rgb(231, 235, 12)
+}
+
+/*Projects Section*/
+
+.projects-container {
+  position: relative;
+  padding-bottom: 14rem;
+  z-index: 1;
+  display: flex;
+  font-size: 24px;
+  /* top: 15rem; */
+  color:whitesmoke;
+  height: auto;
+  width: auto;
+  text-decoration: none;
+}
+
+.projects-section span {
+  font-size: 28px;
+  position: relative;
+}
+
+.title {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 26rem;
+}
+
+.title:hover {
+  color: rgb(245, 71, 40);
+}
+
+.project-card {
+  position: relative; /* set position to relative for proper positioning */
+}
+.project-card {
+  position: relative; /* set position to relative for proper positioning */
+  width: 12rem; /* update width to your desired size */
+  height: 9rem; /* update height to your desired size */
+  margin: 0 45px; /* add margin as needed for spacing between project cards */
+  top: 4rem;
+}
+
+.project-card img {
+  width: 100%; /* set image width to 100% to fit within project card */
+  height: 100%; /* set image height to 100% to fit within project card */
+  object-fit: cover; /* use object-fit property to control how image is resized within project card */
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-card-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6); /* set desired overlay background color and opacity */
+  opacity: 0; /* set initial opacity to 0 for transition effect */
+  transition: opacity 0.3s ease-in-out; /* add transition effect for opacity */
+}
+
+.project-card:hover .project-card-overlay {
+  opacity: 1; /* change opacity to 1 on hover to reveal the overlay with the link */
+}
+
+.project-card-overlay h3 {
+  color: #fff; /* set desired link text color */
+  font-size: 1rem; /* set desired link text size */
+  text-align: center;
+}
+
+.project-card-overlay a {
+  color: #fff; /* set desired link color */
+  text-decoration: none; /* remove default underline style */
+}
+
+.project-card-overlay a:hover {
+  text-decoration: underline; /* add underline effect on hover */
+}
+
+.EZ {
+  color:blue;
+}
+
+/* Resume */
+
+.resume-card {
+  position: relative;
+  z-index: 1;
+  /* margin-bottom: 0rem; */
+  padding: 20px 10px 20px 10px;
+  background: rgb(5, 5, 41);
+  font-size: 20px;
+  /* Add styles for the box */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin-left: 25rem;
+  margin-top: 4rem;
+  color: white;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1; /* Set a negative z-index to place the video behind the card */
+}
+
+.resume-card h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.resume-card p {
+  font-size: 1rem;
+  margin: 1rem;
+  color: whitesmoke;
+}
+
+.resume-card ul {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  padding: 0;
+  text-align: center;
+}
+
+.resume-card h4 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* .resume-card li {
+  font-size: 24px;
+  margin-bottom: 2px;
+} */
+
+
+
+.resume-title:hover {
+  color: rgb(231, 235, 12);
+}
+
+.resume-download-button {
+  margin-bottom: 1rem;
+  margin-left: 17rem;
+  }
+
+  .resume-download-button button {
+      /* Customize button styles */
+      background-color: #007bff; /* Set background color */
+      color: #fff; /* Set text color */
+      padding: 0.5rem 1rem; /* Set padding */
+      border: none; /* Remove border */
+      cursor: pointer; /* Add cursor pointer */
+      font-size: 1rem; /* Set font size */
+      font-weight: bold; /* Set font weight */
+      border-radius: 4px; /* Add border radius */
+      transition: background-color 0.3s ease-in-out; /* Add transition effect */
+    }
+    
+    .resume-download-button button:hover {
+      /* Change styles on hover */
+      background-color: #0056b3; /* Change background color */
+    }  
+
+/* Footer.css */
+.footer-container {
+  height: 60px; /* Adjust the height as needed */
+  width: 100%;
+  line-height: 60px;
+  background-color: black;
+  position: absolute;
+  margin-top: 5;
+  margin-bottom: 0;
+  border-top: 2px solid gray;
+  /* border-bottom: 5px solid #6b6b6b; */
+  color: #FDF8F5;
+  text-align: center;
+  padding-left: 1rem; /* Add padding on the left */
+  padding-right: 1rem; /* Add padding on the right */
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* Add margin as needed */
+}
+
+.icon {
+  margin-right: 1rem; /* Adjust margin between the icons as needed */
+  font-size: 2rem;
+  color: whitesmoke;
+}
+
+.icon-spacing {
+  width: 10px; /* Add spacing between the icons as needed */
+}
+
+.contact-info {
+  margin-top: 1rem;
+}
+
+/*Header*/
+
+.header-container {
+  position: relative;
+  text-align: center;
+  z-index: 100;
+  width: 100.4%;
+  height: auto;
+  line-height: 50px;
+  color: whitesmoke;
+  background-color: black;
+  }
+
+  .logo-relative:hover {
+      color: limegreen;
+      }
+  
+       .logo-relative {
+        position: relative;
+        color: whitesmoke;
+        font-size: 2rem;
+        text-decoration: none;
+      }
+      
+      .logo-relative::before,
+      .logo-relative::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+      }
+      
+      .logo-relative::before {
+        /* background-color: #0BC5EA; Replace with desired color */
+        animation: glitch-1 2s infinite;
+      }
+      
+      .logo-relative::after {
+        
+        animation: glitch-2 3s infinite;
+      }
+    
+     @keyframes glitch-anim-1 {
+      0% {
+        transform: translate(0);
+        opacity: 1;
+        clip: rect(0, 900px, 100px, 0);
+      }
+      2% {
+        transform: translate(-5px, 5px);
+        clip: rect(40px, 900px, 30px, 0);
+      }
+      4% {
+        transform: translate(-5px, -10px);
+        clip: rect(80px, 900px, 60px, 0);
+      }
+      6% {
+        transform: translate(5px, 5px);
+        clip: rect(20px, 900px, 50px, 0);
+      }
+      8% {
+        transform: translate(5px, -5px);
+        clip: rect(90px, 900px, 30px, 0);
+      }
+      10% {
+        transform: translate(5px, 10px);
+        clip: rect(40px, 900px, 80px, 0);
+      }
+      12% {
+        transform: translate(-10px, -10px);
+        clip: rect(50px, 900px, 60px, 0);
+      }
+      14% {
+        transform: translate(10px, 10px);
+        clip: rect(10px, 900px, 30px, 0);
+      }
+      16% {
+        transform: translate(5px, -5px);
+        clip: rect(80px, 900px, 50px, 0);
+      }
+      18% {
+        transform: translate(-5px, 5px);
+        clip: rect(30px, 900px, 70px, 0);
+      }
+      20% {
+        transform: translate(-5px, -5px);
+        clip: rect(90px, 900px, 20px, 0);
+      }
+      22% {
+        transform: translate(-10px, 10px);
+        clip: rect(80px, 900px, 40px, 0);
+      }
+      24% {
+        transform: translate(10px, -10px);
+        clip: rect(50px, 900px, 90px, 0);
+      }
+      26% {
+        transform: translate(10px, 5px);
+        clip: rect(30px, 900px, 100px, 0);
+      }
+      28% {
+      transform: translate(-5px, 5px);
+      clip: rect(80px, 900px, 50px, 0);
+      }
+      30% {
+      transform: translate(-5px, -5px);
+      clip: rect(20px, 900px, 70px, 0);
+      }
+      32% {
+          clip: rect(10px, 900px, 10px, 0);
+      }
+      34% {
+        transform: translate(5px, -10px);
+        clip: rect(90px, 900px, 80px, 0);
+      }
+      36% {
+        transform: translate(-5px, 10px);
+        clip: rect(10px, 900px, 30px, 0);
+      }
+      38% {
+        transform: translate(-10px, -10px);
+        clip: rect(40px, 900px, 70px, 0);
+      }
+      40% {
+        transform: translate(10px, 5px);
+        clip: rect(70px, 900px, 80px, 0);
+      }
+      42% {
+        transform: translate(-5px, -5px);
+        clip: rect(50px, 900px, 50px, 0);
+      }
+      44% {
+        transform: translate(5px, -10px);
+        clip: rect(40px, 900px, 70px, 0);
+      }
+      46% {
+        transform: translate(-10px, 10px);
+        clip: rect(20px, 900px, 10px, 0);
+      }
+      48% {
+        transform: translate(10px, -10px);
+        clip: rect(80px, 900px, 60px, 0);
+      }
+      50% {
+        transform: translate(-5px, 5px);
+        clip: rect(60px, 900px, 90px, 0);
+      }
+      52% {
+        transform: translate(10px, 5px);
+        clip: rect(40px, 900px, 60px, 0);
+      }
+      54% {
+        transform: translate(5px, -5px);
+        clip: rect(10px, 900px, 80px, 0);
+      }
+      56% {
+        transform: translate(-5px, 10px);
+        clip: rect(60px, 900px, 10px, 0);
+      }
+      58% {
+        transform: translate(-10px, -5px);
+        clip: rect(30px, 900px, 50px, 0);
+      }
+      60% {
+        transform: translate(5px, -5px);
+        clip: rect(70px, 900px, 60px, 0);
+      }
+      62% {
+        transform: translate(10px, 5px);
+        clip: rect(90px, 900px, 80px, 0);
+      }
+      64% {
+        transform: translate(5px, -10px);
+        clip: rect(30px, 900px, 30px, 0);
+      }
+      66% {
+        transform: translate(-10px, 10px);
+        clip: rect(10px, 900px, 50px, 0);
+}
+68% {
+  transform: translate(5px, -5px);
+  clip: rect(20px, 900px, 30px, 0);
+}
+70% {
+  transform: translate(-5px, 10px);
+  clip: rect(90px, 900px, 20px, 0);
+}
+72% {
+  transform: translate(10px, -10px);
+  clip: rect(80px, 900px, 60px, 0);
+}
+74% {
+  transform: translate(10px, 5px);
+  clip: rect(60px, 900px, 10px, 0);
+}
+76% {
+  transform: translate(5px, -10px);
+  clip: rect(10px, 900px, 80px, 0);
+}
+78% {
+  transform: translate(5px, 10px);
+  clip: rect(50px, 900px, 10px, 0);
+}
+80% {
+  transform: translate(-5px, -5px);
+  clip: rect(20px, 900px, 70px, 0);
+}
+82% {
+  transform: translate(-10px, 10px);
+  clip: rect(10px, 900px, 50px, 0);
+}
+84% {
+  transform: translate(5px, -5px);
+  clip: rect(40px, 900px, 30px, 0);
+}
+86% {
+  transform: translate(-5px, 10px);
+  clip: rect(80px, 900px, 20px, 0);
+}
+88% {
+  transform: translate(10px, -10px);
+  clip: rect(30px, 900px, 60px, 0);
+}
+90% {
+  transform: translate(10px, 5px);
+  clip: rect(70px, 900px, 10px, 0);
+}
+92% {
+  transform: translate(5px, -10px);
+  clip: rect(10px, 900px, 80px, 0);
+}
+94% {
+  transform: translate(5px, 10px);
+  clip: rect(60px, 900px, 10px, 0);
+}
+96% {
+  transform: translate(-5px, -5px);
+  clip: rect(20px, 900px, 70px, 0);
+}
+98% {
+  transform: translate(-10px, 10px);
+  clip: rect(10px, 900px, 50px, 0);
+}
+100% {
+  transform: translate(0);
+  opacity: 1;
+  clip: rect(0, 900px, 100px, 0);
+}
+}
+
+ 

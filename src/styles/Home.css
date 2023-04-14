@@ -1,0 +1,58 @@
+/* Home */
+
+.home-container {
+    
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: black;
+    padding-bottom: 10rem; /* adjust the value to your desired amount */
+    padding-right: 0;
+   }
+
+  .background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 115%;
+    height: 100%;
+    object-fit: fill;
+    margin-right: 0;
+  }
+
+  .home-content h1{
+    position: relative;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 2rem;
+    color: whitesmoke;
+    margin-bottom: 3rem;
+    margin-top: 2rem;
+  }
+  
+   p {
+    position: relative;
+    font-size: .9rem;
+    line-height: 2rem;
+    text-align: justify;
+    /* margin-right: 1rem; */
+    color: white;
+    padding-bottom: 10rem;
+    margin-right: 14rem;
+  }
+
+  body {
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  
+  /* Example: Prevent horizontal scrolling on a specific container element */
+  .container {
+    overflow-x: hidden;
+  }
+ 
